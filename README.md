@@ -9,7 +9,8 @@ install gitlab.
 Create new project in gitlab. 
 create tkg custer. 
 install runner  
-  a. install helm  
+  a. install helm.     
+  
   b. add gitlab runner chart "helm repo add gitlab https://charts.gitlab.io". 
   
   c. create gitlab namespace "kubectl create ns gitlab".   
@@ -21,6 +22,9 @@ install runner
   f. output = {"id":123456,"token":"xxxxxxxxxx"}.   
   
   g. create runner: helm install tanzu-demo-runner --namespace gitlab gitlab/gitlab-runner --set gitlabUrl=https://gitlab.com/opowbow/tanzu-pipeline-demo,runnerRegistrationToken=xxxxxxxxxx.   
+  
+  h. Runner appear in gitlab as an "Available specific runners".   
+  
   
 
 
