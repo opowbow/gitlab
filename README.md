@@ -5,9 +5,10 @@ Steps to create demo if gitlab for tanzu products
 For TKG on AWS pipelines
 
 install gitlab
-Create new project in gitlab
-create tkg custer
-install runner
+
+Create new project in gitlab/
+create tkg custer/
+install runner/
   a. install helm
   b. add gitlab runner chart "helm repo add gitlab https://charts.gitlab.io"
   c. create gitlab namespace "kubectl create ns gitlab"
