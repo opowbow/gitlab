@@ -2,11 +2,11 @@
 # DB install
 
 ## postgres
-
-cm.yaml
-pv.yaml
-deply.yaml
-svc.yaml
+postgre/     
+cm.yaml.  
+pv.yaml.  
+deply.yaml.  
+svc.yaml.  
 
 CM settings
   POSTGRES_DB: postgresdb
