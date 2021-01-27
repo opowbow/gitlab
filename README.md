@@ -26,5 +26,24 @@ install runner
   h. Runner appear in gitlab as an "Available specific runners".   
   
   
+# Harbor install
+## by helm / bitnami
+
+helm repo add bitnami https://charts.bitnami.com/bitnami   
+helm install my-release bitnami/harbor.  
+export SERVICE_IP=$(kubectl get svc --namespace harbor my-release-harbor --template "{{ range (index .status.loadBalancer.ingress 0) }}{{.}}{{ end }}").  
+echo "Harbor URL: http://$SERVICE_IP/".  
+echo Username: "admin".   
+echo Password: $(kubectl get secret --namespace harbor my-release-harbor-core-envvars -o jsonpath="{.data.HARBOR_ADMIN_PASSWORD}" | base64 --decode).  
+
+## by tanzu extension (kapp)
+
+# Replicate Images from docker to harbor. 
+
+
+
+
+
+ 
 
 
