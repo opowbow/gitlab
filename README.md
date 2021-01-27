@@ -1,3 +1,20 @@
+
+# DB install
+
+## postgres
+
+cm.yaml
+pv.yaml
+deply.yaml
+svc.yaml
+
+CM settings
+  POSTGRES_DB: postgresdb
+  POSTGRES_USER: postgresadmin
+  POSTGRES_PASSWORD: admin123
+  
+  
+
 # gitlab
 
 Steps to create demo if gitlab for tanzu products. 
